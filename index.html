@@ -36,8 +36,6 @@
 		<div class="row">
 			<div class="col-sm-8">
 				
-				<h1>Button</h1>
-				
 				<button type="button" class="btn btn-primary btn-sm">Primary sm</button>
 				<button type="button" class="btn btn-secondary btn-sm">Secondary sm</button>
 				<button type="button" class="btn btn-outline-secondary btn-sm">Outlined sm</button>	  
@@ -60,17 +58,36 @@
 
 		<div class="row">
 			<div class="col-sm-8">
-				<form>
-					<div class="mb-3">
-					  <label for="location" class="form-label">Location</label>
-					  <input type="text" class="form-control" id="location" value="Location A, Street A, Barangay A, City A, Province A" required>
-					</div>
-					<div class="mb-3">
-						<label for="team-count" class="form-label">Team Count</label>
-						<input type="number" class="form-control" id="team-count" value="5" required>
+
+				<div class="card">
+					
+					<div class="card-body">
+						<form>
+							<div class="mb-3">
+								<label for="client-name" class="form-label">Client Name</label>
+								<select id="client-name" class="form-select" required>
+									<option value="ABC">ABC</option>
+									<option value="DEF">DEF</option>
+									<option value="GHI">GHI</option>
+								</select>
+								<i class="bi bi-chevron-down"></i>
+							</div>
+							<div class="mb-3 pt-3">
+								<label for="location" class="form-label">Location</label>
+								<input type="text" class="form-control" id="location" value="Location A, Street A, Barangay A, City A, Province A" required>
+							</div>
+							<div class="mb-3 pt-3">
+								<label for="team-count" class="form-label">Team Count</label>
+								<input type="number" class="form-control" id="team-count" value="5" required>
+							</div>
+						</form>
 					</div>
 					
-				</form>
+				</div>
+
+				
+					
+				
 			</div>
 		</div>
 		

@@ -1,0 +1,58 @@
+.btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    padding: 8px 18px;
+    border-width: 1px;
+    border-style: solid;
+    font-weight: 400;
+    border-radius: 4px;
+
+    &.btn-sm {
+        padding: 4px 18px;
+    }
+
+    &.btn-primary {
+        color: $color-light;
+        border-color: $color-primary;
+        background-color: $color-primary;
+        // font-weight: 600;
+        
+        // &.btn-sm {
+            // color: #D8F4EF;
+            // border-color: #a1a1a1;
+        // }
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-primary, 10);
+            border-color: darken($color-primary, 10);
+        }
+    }
+
+    &.btn-secondary {
+        color: $color-light;
+        border-color: $color-secondary;
+        background-color: $color-secondary;
+        // font-weight: 400;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-secondary, 10);
+            border-color: darken($color-secondary, 10);
+        }
+    }
+
+    &.btn-outline-secondary {
+        // font-weight: 400;
+        // color: #000;
+        // border-color: rgba(0,0,0,0.3);
+        color: $color-dark;
+        border-color: $color-secondary;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(0,0,0,0.1);
+        }
+        
+    }
+}

@@ -2,6 +2,7 @@
 
 body {
     background-color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -12,89 +13,6 @@ p {
     font-weight: 500;
 }
 
-
-.form-control {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    line-height: 24px;
-    color: #000;
-    font-weight: 400;
-    padding: 4px 12px;
-    border-radius: 12px;
-    background: #f9fafa; 
-    border: solid 1px #b9b9b9;
-}
-
-
-.form-label {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-    color: #161616;
-    font-weight: 500;  
-    margin-bottom: 6px;
-}
-
-div:has(.form-control:required) .form-label::after {
-    content: "*";
-    color: #9D0404;
-}
-
-.btn {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    padding: 8px 18px;
-    border-width: 1px;
-    border-style: solid;
-    font-weight: 400;
-    border-radius: 4px;
-
-    &.btn-sm {
-        padding: 4px 18px;
-    }
-
-    &.btn-primary {
-        color: $color-light;
-        border-color: $color-primary;
-        background-color: $color-primary;
-        // font-weight: 600;
-        
-        // &.btn-sm {
-            // color: #D8F4EF;
-            // border-color: #a1a1a1;
-        // }
-
-        &:hover,
-        &:focus {
-            background-color: darken($color-primary, 10);
-            border-color: darken($color-primary, 10);
-        }
-    }
-
-    &.btn-secondary {
-        color: $color-light;
-        border-color: $color-secondary;
-        background-color: $color-secondary;
-        // font-weight: 400;
-
-        &:hover,
-        &:focus {
-            background-color: darken($color-secondary, 10);
-            border-color: darken($color-secondary, 10);
-        }
-    }
-
-    &.btn-outline-secondary {
-        // font-weight: 400;
-        // color: #000;
-        // border-color: rgba(0,0,0,0.3);
-        color: $color-dark;
-        border-color: $color-secondary;
-
-        &:hover,
-        &:focus {
-            background-color: rgba(0,0,0,0.1);
-        }
-        
-    }
-}
+@import "button";
+@import "card";
+@import "form";
