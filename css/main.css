@@ -10,6 +10,9 @@ p {
   color: #000;
   font-weight: 500;
 }
+p:last-child {
+  margin-bottom: 0;
+}
 
 .btn {
   font-family: "Poppins", sans-serif;
@@ -54,6 +57,7 @@ p {
   border-radius: 12px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.08);
+  margin: 16px auto 32px;
 }
 .card .card-body {
   padding: 15px 30px;
