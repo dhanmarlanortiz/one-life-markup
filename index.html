@@ -53,8 +53,8 @@
 					<div class="card-body">
 						<form>
 							<div class="mb-3">
-								<label for="client-name" class="form-label">Client Name</label>
-								<select id="client-name" class="form-select" required>
+								<label for="select" class="form-label">Select</label>
+								<select id="select" class="form-select" required>
 									<option value="ABC">ABC</option>
 									<option value="DEF">DEF</option>
 									<option value="GHI">GHI</option>
@@ -62,18 +62,34 @@
 								<i class="bi bi-chevron-down"></i>
 							</div>
 							<div class="mb-3 pt-3">
-								<label for="location" class="form-label">Location</label>
-								<input type="text" class="form-control" id="location" value="Location A, Street A, Barangay A, City A, Province A" required>
+								<label for="text-input" class="form-label">Text Input</label>
+								<input type="text" class="form-control" id="text-input" value="Location A, Street A, Barangay A, City A, Province A" required>
 							</div>
 							<div class="mb-3 pt-3">
-								<label for="team-count" class="form-label">Team Count</label>
-								<input type="number" class="form-control" id="team-count" value="5" required>
+								<label for="number-input" class="form-label">Number Input</label>
+								<input type="number" class="form-control" id="number-input" value="5" required>
 							</div>
 
 							<div class="mb-3 pt-3">
-								<label for="notes" class="form-label">Notes:</label>
-								<textarea class="form-control" placeholder="Type here" id="notes" rows="6"></textarea>
+								<label for="textarea" class="form-label">Textarea</label>
+								<textarea class="form-control" placeholder="Type here" id="textarea" rows="6"></textarea>
 							</div>
+							
+							<div class="input-group mb-3">
+								<label for="date-range" class="form-label w-100">Date Range Picker</label>
+								<input type="date" class="form-control" placeholder="Username" aria-label="Username">
+								<span class="input-group-text">-</span>
+								<input type="date" class="form-control" placeholder="Server" aria-label="Server">
+							</div>
+
+
+							<div class="mb-3 pt-3">
+								<label for="date-picker" class="form-label">Date Picker</label>
+								<input type="date" class="form-control" id="date-picker">
+							</div>
+
+							
+							
 
 							<!-- <div class="mb-3 pt-3">
 								<input type="date">

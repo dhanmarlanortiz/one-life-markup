@@ -97,3 +97,21 @@ div:has(> .form-select:required) > .form-label::after {
   content: "*";
   color: #9D0404;
 }
+
+.input-group input[type=date] {
+  border-left: none;
+  border-right: none;
+}
+.input-group input[type=date]:first-of-type {
+  border-radius: 12px 0 0 12px !important;
+  border-left: solid 1px #b9b9b9;
+  padding-right: 0;
+}
+.input-group input[type=date]:last-of-type {
+  border-right: solid 1px #b9b9b9;
+  padding-left: 0;
+}
+.input-group input[type=date] + .input-group-text {
+  background: #f9fafa;
+  border-color: #b9b9b9;
+}
