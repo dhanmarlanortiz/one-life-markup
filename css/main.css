@@ -115,3 +115,53 @@ div:has(> .form-select:required) > .form-label::after {
   background: #f9fafa;
   border-color: #b9b9b9;
 }
+
+.form-check {
+  padding-left: 21px;
+  margin: 8px 0;
+}
+.form-check .form-check-input {
+  border-color: #b9b9b9;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-left: -21px;
+}
+.form-check .form-check-input:checked {
+  background-color: #3CA6F0;
+  border-color: #3CA6F0;
+}
+.form-check .form-check-label {
+  font-size: 12px;
+  color: #161616;
+}
+.form-check:has(.form-control) .form-control {
+  margin-top: 5px;
+}
+@media screen and (min-width: 575px) {
+  .form-check:has(.form-control) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-check:has(.form-control) .form-check-input {
+    margin-top: -1px;
+  }
+  .form-check:has(.form-control) .form-check-label {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .form-check:has(.form-control) .form-control {
+    max-width: 318px;
+    margin-top: 0;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%2328BB9E' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center;
+  }
+}
