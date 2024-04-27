@@ -34,11 +34,15 @@ div:has(> .form-select:required) > .form-label::after {
     color: #9D0404;
 }
 
+input[type='date'] {
+    max-width: 127px;
+}
+
 .input-group {
     input[type='date'] {
         border-left: none;
         border-right: none;
-        // max-width: 115px;
+        max-width: 115px;
 
         // &::-webkit-calendar-picker-indicator {
             // outline: solid 1px red;
