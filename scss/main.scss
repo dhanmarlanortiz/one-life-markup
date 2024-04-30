@@ -19,6 +19,36 @@ p {
     }
 }
 
+h1 {
+    font-size: 27px;
+    color: #1E1E1E;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 24px;
+    color: #1E1E1E;
+    font-weight: 600;
+}
+
+h3 {
+    color: #28BB9E;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #9FA1A6;
+    font-weight: 300;
+}
+
+.text-primary {
+    color: #28BB9E !important;
+}
+
+
+
+
 @import "button";
 @import "card";
 @import "form";

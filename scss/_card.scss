@@ -3,7 +3,17 @@
     border-radius: 12px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, .1), 0px 2px 1px rgba(0, 0, 0, .06), 0px 1px 1px rgba(0, 0, 0, .08);
     margin: 16px auto 32px;
+
+    .card-header {
+        padding: 15px 30px 10px;
+        border-bottom-color: #E8E8E8;
+        background: none;
+    }
     
+    .card-title {
+        color: #1E1E1E;
+    }
+
     .card-body {
         padding: 15px 30px;
     }
